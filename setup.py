@@ -1,8 +1,7 @@
 import os
 
 import pkg_resources
-from setuptools import setup, find_packages
-
+from setuptools import find_packages, setup
 
 setup(
     name="human-eval",
@@ -19,7 +18,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "evaluate_functional_correctness = human_eval.evaluate_functional_correctness",
+            "evaluate_functional_correctness = human_eval.evaluate_functional_correctness:main",
         ]
-    }
+    },
 )
